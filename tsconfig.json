@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@domain": ["domain"],
+      "@domain/*": ["domain/*"],
+      "@application": ["application"],
+      "@application/*": ["application/*"],
+      "@infrastructure": ["infrastructure"],
+      "@infrastructure/*": ["infrastructure/*"],
+      "@helpers": ["helpers"],
+      "@helpers/*": ["helpers/*"],
+    },
+  },
+  "include": [
+    "src",
+    "domain",
+    "application",
+    "helpers",
+    "infrastructure"
+  ],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
+  
